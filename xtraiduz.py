@@ -1,10 +1,4 @@
-import pandas as pd
-pd.options.mode.chained_assignment = None  # default='warn'
-
 import streamlit as st
-import json
-from streamlit_gsheets import GSheetsConnection
-import pandas as pd
 import tika
 tika.initVM()
 from tika import parser
