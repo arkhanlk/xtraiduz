@@ -1,0 +1,8 @@
+streamlit
+tika
+deep_translator
+stqdm
+string
+re
+time
+math
