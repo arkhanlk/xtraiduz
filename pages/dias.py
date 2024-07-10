@@ -1,6 +1,6 @@
 import streamlit as st
 
-ss['txt'] = st.input_area('Cola o texto aqui')
+ss['txt'] = st.text_area('Cola o texto aqui')
 def word_count(str):
     # Create an empty dictionary named 'counts' to store word frequencies.
     counts = dict()
