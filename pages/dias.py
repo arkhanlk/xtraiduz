@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit import session_state as ss
 import pandas as pd
 
-ss['txt'] = st.text_area('Cola o texto aqui')
+ss['txt'] = st.text_area('Cola o texto aqui pra fazer contagem')
 def word_count(str):
     # Create an empty dictionary named 'counts' to store word frequencies.
     counts = dict()
@@ -27,7 +27,6 @@ def word_count(str):
 st.write(word_count(ss['txt']))
 
 st.write('---')
-st.write('TESTANDO')
 
 def word_count(str):
     # Create an empty dictionary named 'counts' to store word frequencies.
@@ -50,7 +49,7 @@ def word_count(str):
     zz = pd.DataFrame(counts.items())
     st.bar_chart(data=zz)
     
-ss['txt2'] = st.text_area('Cola o texto aqui', key='a')
+ss['txt2'] = st.text_area('Cola o texto aqui pra fazer o gráfico', key='a')
 word_count(ss['txt2'])
 st.bar_chart(data=zz)
 
