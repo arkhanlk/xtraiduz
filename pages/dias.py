@@ -21,10 +21,7 @@ def word_count(str):
             counts[word] = 1
 
     # Return the 'counts' dictionary, which contains word frequencies.
-    zz = pd.DataFrame([counts])
-    return counts, zz
-
+    st.bar_chart(pd.DataFrame([counts]))
+    st.write(word_count(ss['txt']))
+    
 # Call the word_count function with an input sentence and print the results.
-st.write( word_count(ss['txt']))
-
-st.bar_chart(zz)
