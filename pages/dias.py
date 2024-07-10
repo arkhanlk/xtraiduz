@@ -48,7 +48,7 @@ def word_count(str):
 
     # Return the 'counts' dictionary, which contains word frequencies.
     zz = pd.DataFrame(counts.items())
-    return zz
+    st.bar_chart(data=zz)
     
 ss['txt2'] = st.text_area('Cola o texto aqui', key='a')
 word_count(ss['txt2'])
