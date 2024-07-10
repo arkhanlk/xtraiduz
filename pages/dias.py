@@ -1,4 +1,4 @@
-import streamlit as st
+='import streamlit as st
 from streamlit import session_state as ss
 import pandas as pd
 
@@ -30,7 +30,7 @@ st.write(word_count(ss['txt']))
 st.write('---')
 st.write('TESTANDO')
 
-ss['txt2'] = st.text_area('Cola o texto aqui')
+ss['txt2'] = st.text_area('Cola o texto aqui', key='a')
 word_count(ss['txt2'])
 zz = pd.DataFrame(counts.items())
 st.bar_chart(data=zz)
