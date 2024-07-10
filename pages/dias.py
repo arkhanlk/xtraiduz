@@ -23,4 +23,10 @@ def word_count(str):
     return counts
 
 # Call the word_count function with an input sentence and print the results.
-st.write( word_count(ss['txt']))
+zz = st.write( word_count(ss['txt']))
+
+st.download_button(
+label='Download texto traduzido',
+data=zz,
+file_name='traduzido.txt',
+mime='text')
