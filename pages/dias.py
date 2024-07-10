@@ -25,4 +25,6 @@ def word_count(str):
 # Call the word_count function with an input sentence and print the results.
 zz = st.write( word_count(ss['txt']))
 
-st.bar_chart(zz)
+
+
+st.bar_chart(pd.DataFrame(zz))
