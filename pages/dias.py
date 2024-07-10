@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit import session_state as ss
+import pandas as pd
 
 ss['txt'] = st.text_area('Cola o texto aqui')
 def word_count(str):
