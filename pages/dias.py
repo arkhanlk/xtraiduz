@@ -26,3 +26,13 @@ def word_count(str):
     
 # Call the word_count function with an input sentence and print the results.
 st.write(word_count(ss['txt']))
+
+st.write('---')
+st.write('TESTANDO')
+
+ss['txt2'] = st.text_area('Cola o texto aqui')
+word_count(ss['txt2'])
+zz = pd.DataFrame(counts.items())
+st.bar_chart(data=zz)
+
+
