@@ -1,11 +1,10 @@
 import streamlit as st
 
-  ss['txt'] = st.input_area('Cola o texto aqui')
-  if ss['txt']:
-    def word_count(str):
+ss['txt'] = st.input_area('Cola o texto aqui')
+def word_count(str):
     # Create an empty dictionary named 'counts' to store word frequencies.
     counts = dict()
-    
+
     # Split the input string 'str' into a list of words using spaces as separators and store it in the 'words' list.
     words = str.split()
 
