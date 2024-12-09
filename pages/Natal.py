@@ -5,8 +5,9 @@ import pandas as pd
 ss['txt'] = st.text_area('Cola o código aqui')
 ss['btn'] = st.button('Clique para decifrar')
 def word_count(str):
-    res = ''.join(format(ord(i), '08b') for i in ss['txt'])
+    res = ''.join(format(ord(i), '08b') for i in str)
+    return res
     
 # Call the word_count function with an input sentence and print the results.
 if ss['btn']:
-    st.write(res)
+    st.write(word_count(ss['txt']))
