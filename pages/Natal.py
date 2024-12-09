@@ -27,7 +27,7 @@ diced = {}
 def rander():
     for k, d in zip(list(part.keys()), dice):
         if k != d:
-            diced[k] = ''.join(chr(int(d[i*8:i*8+8],2)) for i in range(len(d)//8))
+            diced[k] = [ord(c) for c in list(d)]
             st.success(k)
         else:
             st.warning(k)
