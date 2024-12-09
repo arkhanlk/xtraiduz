@@ -20,12 +20,12 @@ part = {
     'Paulinho':'',
     }
 
-dice = part.keys()
+dice = list(part.keys())
 random.shuffle(dice)
 
 diced = {}
 def rander():
-    for k, d in zip(part.keys(), dice):
+    for k, d in zip(list(part.keys()), dice):
         if k != d:
             diced[k] = ''.join(chr(int(d[i*8:i*8+8],2)) for i in range(len(d)//8))
             st.success(k)
