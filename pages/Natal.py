@@ -40,10 +40,11 @@ ss['btn'] = st.button('Clique para decifrar')
 
 vv = str()
 def word_count(s):
+    global vv
     var = list((ss['txt']).split(','))
     for v in var:
         st.write(chr(int(v)))
-        vv = vv + chr(int(v))
+        vv = str(vv) + str(chr(int(v)))
     st.write(vv)
     
 # Call the word_count function with an input sentence and print the results.
