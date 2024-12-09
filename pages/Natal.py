@@ -15,8 +15,6 @@ part = {
     'Mila':'',
     'Iolanda':'',
     'Alessandra':'',
-    'Laura':'',
-    'Julia':'',
     'Paulinho':'',
     }
 
@@ -41,7 +39,6 @@ ss['txt'] = st.text_area('Cola o código aqui')
 ss['btn'] = st.button('Clique para decifrar')
 
 def word_count(s):
-    var = (ss['txt']).split(',')
     for c in (ss['txt']).split(','):
         return c, chr(int(c))
     
