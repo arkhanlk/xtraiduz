@@ -43,7 +43,7 @@ def word_count(s):
     var = list((ss['txt']).split(','))
     for v in var:
         st.write(chr(int(v)))
-        vv += chr(int(v))
+        vv = vv + chr(int(v))
     st.write(vv)
     
 # Call the word_count function with an input sentence and print the results.
