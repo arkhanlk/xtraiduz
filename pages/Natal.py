@@ -3,7 +3,7 @@ from streamlit import session_state as ss
 import pandas as pd
 import random 
 
-"""
+_ = """
 part = {
     'Estela':'',
     'JPedro':'',
