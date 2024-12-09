@@ -39,8 +39,9 @@ ss['txt'] = st.text_area('Cola o código aqui')
 ss['btn'] = st.button('Clique para decifrar')
 
 def word_count(s):
-    for c in (ss['txt']).split(','):
-        return c, chr(int(c))
+    var = list((ss['txt']).split(','))
+    for v in var:
+        st.write(v, chr(int(v)))
     
 # Call the word_count function with an input sentence and print the results.
 if ss['btn']:
