@@ -5,10 +5,10 @@ import random
 
 part = {
     'Estela':'',
-    'J. Pedro':'',
+    'JPedro':'',
     'Luiz':'',
     'Karina':'',
-    'J. Paulo':'',
+    'JPaulo':'',
     'Duda':'',
     'Eliana':'',
     'Vitor':'',
