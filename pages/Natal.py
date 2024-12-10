@@ -3,7 +3,7 @@ from streamlit import session_state as ss
 import pandas as pd
 import random 
 
-
+_ = """
 part = {
     'Estela':'',
     'JPedro':'',
@@ -35,8 +35,6 @@ def rander():
 z = st.button('rand')
 if z:
     rander()
-
-_ = """
 """;
 
 ss['txt'] = st.text_area('Cola o código aqui')
