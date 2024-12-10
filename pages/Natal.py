@@ -3,7 +3,7 @@ from streamlit import session_state as ss
 import pandas as pd
 import random 
 
-_ = """
+#_ = """
 part = {
     'Estela':'',
     'JPedro':'',
@@ -35,7 +35,7 @@ def rander():
 z = st.button('rand')
 if z:
     rander()
-""";
+#""";
 
 ss['txt'] = st.text_area('Cola o código aqui')
 ss['btn'] = st.button('Clique para decifrar')
@@ -43,7 +43,7 @@ ss['btn'] = st.button('Clique para decifrar')
 vv = str()
 def word_count(s):
     global vv
-    var = list((ss['txt']).split(','))
+    var = list(str(ss['txt']).strip().split(','))
     for v in var:
         st.write(chr(int(v)))
         vv = str(vv) + str(chr(int(v)))
