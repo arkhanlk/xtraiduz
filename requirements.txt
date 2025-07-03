@@ -1,3 +1,9 @@
-tika
 deep_translator
+matplotlib
+pandas
+Pillow
+plotly
+st_gsheets_connection
 stqdm
+streamlit
+tika
